@@ -1,2 +1,2 @@
-cout << "Element : " << ptr->data << endl;
-    // ptr = ptr->next;
+
+    head = Deleting_firstnode(head);
