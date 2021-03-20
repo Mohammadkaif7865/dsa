@@ -1,2 +1,2 @@
-
-    head = Deleting_firstnode(head);
+>arr[0] = 4;
+    // s->top++;
