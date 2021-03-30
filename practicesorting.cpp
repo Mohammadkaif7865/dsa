@@ -73,42 +73,26 @@ void selectionsort(int *s, int size)
 {
     int point = 0;
     int temp;
-    int min;
     for (int i = 0; i < size - 1; i++)
     {
-        min = s[i];
+        point = i;
         for (int j = i + 1; j < size; j++)
         {
-            if (min > s[j])
+            if (s[j] < s[point])
             {
-                min = s[j];
                 point = j;
             }
         }
-        temp = s[i];
-        s[i] = min;
-        s[point] = temp;
+        temp = s[point];
+        s[point] = s[i];
+        s[i] = temp;
     }
 }
-// }{
-//     int key,j;
-//     for (int i = 1; i < size; i++) //Loop for pass
-//     {
-//         key = s[i];
-//         j = i-1;
-//         while (j>=0 &&s[j]>key) //Loop for each pass
-//         {
-//             s[j+1] = s[j];
-//             j--;
-//         }
-//         s[j+1] = key;
-//     }
-// }
 int main()
 {
-    int arr[] = {1, 2325, 26, 252, 523, 51, 35, 635, 426, 5, 7, 35, 23, 57, 6, 4, 56, 784, 346, 2};
+    int arr[] = {4, 523, 53, 74,8, 59, 754, 73, 532, 54, 7, 48, 9, 3, 5347, 56, 87, 345, 64, 763, 6, 436,  46346, 73};
     int size = sizeof(arr) / sizeof(int);
-    selectionsort(arr,size);
+    Quicksort(arr, 0, size - 1);
     for (int j = 0; j < size; j++)
     {
         cout << arr[j] << " ";
