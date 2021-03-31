@@ -58,14 +58,14 @@ void bubblesort(int * s , int size){
 }
 int main()
 {
-    int arr[] = {1, 2325, 26, 252, 523, 51, 35, 635, 426, 5, 7, 35, 23, 57, 6, 4, 56, 784, 346, 2};
+    int arr[] = {45645, 78, 6954, 34, 4, 5, 78, 68, 979, 7, 95, 335232, 654, 765, 76, 7, 87, 8};
     int size = sizeof(arr) / sizeof(int);
     // for (int i = 0; i < size; i++)
     // {
     //     cout << arr[i] << " ";
     // }
     cout << endl;
-    selectionsort(arr, size);
+    bubblesort(arr, size);
     for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";
