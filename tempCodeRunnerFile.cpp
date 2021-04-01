@@ -1,4 +1,4 @@
- for (int i = 0; i < size; i++)
-    {
-        cout << A[i] << " ";
-    }
+>left = NULL;
+    // p3->right = NULL;
+    // p4->left = NULL;
+    // p4->right = NULL;
