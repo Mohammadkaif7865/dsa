@@ -1,4 +1,4 @@
->left = NULL;
-    // p3->right = NULL;
-    // p4->left = NULL;
-    // p4->right = NULL;
+out<<"Preorder traversal"<<endl;
+    // preorder(p);
+    // cout<<endl<<"Postorder traversal"<<endl;
+    // postorder(p);
